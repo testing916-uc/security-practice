@@ -1,304 +1,413 @@
 [
   {
     "domain": "General Security Concepts",
-    "question": "Which of the following BEST describes the principle of least privilege?",
+    "question": "Which security principle emphasizes minimizing the attack surface by providing only the necessary access and permissions to users and systems?",
     "options": {
-      "A": "Users are granted unlimited access to all resources by default.",
-      "B": "Users are granted only the minimum permissions necessary to perform their job duties.",
-      "C": "Users are granted elevated privileges based on their seniority in the organization.",
-      "D": "Users are granted temporary access to resources as needed, without ongoing review."
+      "A": "Separation of Duties",
+      "B": "Least Privilege",
+      "C": "Defense in Depth",
+      "D": "Access Control"
     },
     "correct_answer": "B",
-    "explanation": "The principle of least privilege dictates that users should only be granted the minimum level of access and permissions required for them to perform their specific job functions. This minimizes the potential damage that could be caused by accidental errors, negligence, or malicious activity."
+    "explanation": "The principle of least privilege dictates that users and systems should only be granted the minimum level of access and permissions required for them to perform their specific functions. This reduces the potential impact of a compromise."
   },
   {
     "domain": "General Security Concepts",
-    "question": "What is the primary goal of the CIA triad in information security?",
+    "question": "The assurance that data is accurate, complete, and uncorrupted is related to which leg of the CIA triad?",
     "options": {
-      "A": "To ensure cost-effectiveness, innovation, and availability of IT resources.",
-      "B": "To guarantee confidentiality, integrity, and accountability of data.",
-      "C": "To protect the confidentiality, integrity, and availability of information assets.",
-      "D": "To establish a framework for compliance, internal control, and auditing."
+      "A": "Confidentiality",
+      "B": "Integrity",
+      "C": "Availability",
+      "D": "Authentication"
     },
-    "correct_answer": "C",
-    "explanation": "The CIA triad stands for Confidentiality, Integrity, and Availability. These are considered the three fundamental pillars of information security, aiming to protect sensitive information from unauthorized access (confidentiality), ensure its accuracy and trustworthiness (integrity), and guarantee that it is accessible to authorized users when needed (availability)."
-  },
-    {
-    "domain": "General Security Concepts",
-    "question": "A security control that is implemented to deter an attacker from attempting to violate security policies is known as a:",
-    "options": {
-      "A": "Preventive control",
-      "B": "Detective control",
-      "C": "Deterrent control",
-      "D": "Corrective control"
-    },
-    "correct_answer": "C",
-    "explanation": "Deterrent controls are designed to discourage potential attackers by making the attack less appealing or more difficult. Examples include warning banners on systems or visible security cameras."
+    "correct_answer": "B",
+    "explanation": "Integrity ensures that data has not been tampered with and is accurate and trustworthy. Confidentiality protects data from unauthorized access, and availability ensures data is accessible when needed."
   },
   {
     "domain": "General Security Concepts",
-    "question": "Which of the following is an example of a technical security control?",
+    "question": "Which type of security control uses physical barriers to protect assets?",
     "options": {
-      "A": "Security awareness training",
-      "B": "Access control list (ACL)",
-      "C": "Security policy document",
-      "D": "Background checks for employees"
+      "A": "Technical",
+      "B": "Administrative",
+      "C": "Operational",
+      "D": "Physical"
+    },
+    "correct_answer": "D",
+    "explanation": "Physical security controls are tangible measures implemented to protect physical assets, such as locks, fences, surveillance cameras, and security guards."
+  },
+  {
+    "domain": "General Security Concepts",
+    "question": "Implementing a security awareness training program for employees is an example of what type of security control?",
+    "options": {
+      "A": "Technical",
+      "B": "Managerial (Administrative)",
+      "C": "Operational",
+      "D": "Physical"
     },
     "correct_answer": "B",
-    "explanation": "Technical controls are implemented through hardware, software, or firmware. An Access Control List (ACL) is a technical mechanism used to filter network traffic and enforce access policies."
+    "explanation": "Managerial or administrative controls involve policies, procedures, and training to manage security risks. Security awareness training falls under this category as it focuses on educating personnel."
   },
-    {
+  {
     "domain": "General Security Concepts",
-    "question": "The process of identifying, assessing, and prioritizing risks to an organization's assets is called:",
+    "question": "What is the term for a potential weakness in a system or network that could be exploited by a threat actor?",
     "options": {
-      "A": "Vulnerability management",
-      "B": "Threat intelligence",
-      "C": "Risk management",
-      "D": "Incident response"
+      "A": "Threat",
+      "B": "Vulnerability",
+      "C": "Risk",
+      "D": "Exploit"
+    },
+    "correct_answer": "B",
+    "explanation": "A vulnerability is a weakness that could be exploited. A threat is a potential danger, a risk is the likelihood and impact of a threat exploiting a vulnerability, and an exploit is the tool or technique used to take advantage of a vulnerability."
+  },
+  {
+    "domain": "General Security Concepts",
+    "question": "The concept of using multiple layers of security controls to protect assets is known as:",
+    "options": {
+      "A": "Single Factor Authentication",
+      "B": "Principle of Least Privilege",
+      "C": "Defense in Depth",
+      "D": "Implicit Deny"
     },
     "correct_answer": "C",
-    "explanation": "Risk management is the overall process of identifying, assessing, and prioritizing risks, followed by applying resources to minimize, monitor, and control the probability or impact of unfortunate events."
+    "explanation": "Defense in depth is a security strategy that employs multiple layers of security controls to protect assets, so that if one control fails, others are still in place."
   },
   {
     "domain": "Threats, Vulnerabilities, and Mitigations",
-    "question": "Which type of malware replicates itself without requiring a host file and spreads rapidly across a network?",
+    "question": "Which attack involves an attacker attempting to guess a user's password by trying a large number of possible combinations?",
     "options": {
-      "A": "Virus",
-      "B": "Trojan horse",
-      "C": "Worm",
-      "D": "Spyware"
+      "A": "Phishing",
+      "B": "DDoS",
+      "C": "Brute Force",
+      "D": "Man-in-the-Middle"
     },
     "correct_answer": "C",
-    "explanation": "A worm is a standalone malware program that replicates itself to spread to other computers, often without requiring any user interaction. Unlike viruses, worms do not need to attach themselves to an existing program."
+    "explanation": "A brute force attack systematically tries every possible password combination until the correct one is found."
   },
-    {
+  {
     "domain": "Threats, Vulnerabilities, and Mitigations",
-    "question": "A user receives an email that appears to be from their bank, asking them to click a link to verify their account information. This is an example of what type of attack?",
+    "question": "Malware that encrypts a victim's files and demands a ransom for their decryption is known as:",
     "options": {
-      "A": "DDoS attack",
-      "B": "Man-in-the-middle attack",
-      "C": "Phishing attack",
-      "D": "SQL injection attack"
+      "A": "Spyware",
+      "B": "Adware",
+      "C": "Ransomware",
+      "D": "Rootkit"
     },
     "correct_answer": "C",
-    "explanation": "Phishing is a type of social engineering attack where an attacker attempts to deceive individuals into providing sensitive information, such as usernames, passwords, and credit card details, often through fraudulent emails or websites that mimic legitimate ones."
+    "explanation": "Ransomware is a type of malicious software that locks or encrypts a victim's data or system and demands a payment (ransom) to restore access."
   },
-    {
+  {
     "domain": "Threats, Vulnerabilities, and Mitigations",
-    "question": "Which vulnerability allows an attacker to execute malicious scripts in a victim's web browser?",
+    "question": "Which social engineering technique involves creating a fabricated scenario to trick a victim into providing information or performing an action?",
     "options": {
-      "A": "Cross-Site Scripting (XSS)",
-      "B": "Cross-Site Request Forgery (CSRF)",
-      "C": "SQL Injection",
-      "D": "Buffer Overflow"
+      "A": "Phishing",
+      "B": "Baiting",
+      "C": "Pretexting",
+      "D": "Quid pro quo"
     },
-    "correct_answer": "A",
-    "explanation": "Cross-Site Scripting (XSS) is a web security vulnerability that allows attackers to inject malicious scripts into web pages viewed by other users. This can lead to the theft of cookies, session hijacking, and other malicious actions."
+    "correct_answer": "C",
+    "explanation": "Pretexting involves the attacker creating a believable, but false, scenario (a pretext) to gain a victim's trust and obtain information."
   },
-    {
+  {
     "domain": "Threats, Vulnerabilities, and Mitigations",
-    "question": "What is the primary purpose of a vulnerability scan?",
+    "question": "A vulnerability scanner identifies which of the following?",
     "options": {
-      "A": "To exploit vulnerabilities and gain unauthorized access.",
-      "B": "To identify security weaknesses in systems and networks.",
-      "C": "To monitor network traffic for malicious activity.",
-      "D": "To perform forensic analysis after a security incident."
+      "A": "Active intrusions",
+      "B": "Known security weaknesses",
+      "C": "Zero-day exploits",
+      "D": "Employee misconduct"
     },
     "correct_answer": "B",
-    "explanation": "Vulnerability scanning is an automated process to identify known security weaknesses (vulnerabilities) in systems, applications, and networks. It does not exploit these vulnerabilities."
+    "explanation": "Vulnerability scanners are automated tools that identify known vulnerabilities in systems and networks by comparing system configurations and software versions against databases of known weaknesses."
+  },
+  {
+    "domain": "Threats, Vulnerabilities, and Mitigations",
+    "question": "Which type of threat actor is typically motivated by political or social causes?",
+    "options": {
+      "A": "Cybercriminals",
+      "B": "Script Kiddies",
+      "C": "Hacktivists",
+      "D": "Insiders"
+    },
+    "correct_answer": "C",
+    "explanation": "Hacktivists use hacking techniques to promote a political or social agenda."
+  },
+  {
+    "domain": "Threats, Vulnerabilities, and Mitigations",
+    "question": "What is a zero-day vulnerability?",
+    "options": {
+      "A": "A vulnerability that has been publicly disclosed and patched.",
+      "B": "A vulnerability that is known to the vendor but not yet publicly disclosed or patched.",
+      "C": "A vulnerability that has been exploited for zero days.",
+      "D": "A vulnerability that has no known mitigation."
+    },
+    "correct_answer": "B",
+    "explanation": "A zero-day vulnerability is a security flaw that is unknown to the software vendor. Once discovered and potentially exploited by attackers, the vendor has 'zero days' to fix it before it becomes widely known."
+  },
+  {
+    "domain": "Threats, Vulnerabilities, and Mitigations",
+    "question": "An attack that overloads a system or network resource to make it unavailable to legitimate users is called a:",
+    "options": {
+      "A": "Man-in-the-Middle attack",
+      "B": "Denial-of-Service (DoS) attack",
+      "C": "SQL Injection attack",
+      "D": "Cross-Site Scripting (XSS) attack"
+    },
+    "correct_answer": "B",
+    "explanation": "A Denial-of-Service (DoS) attack aims to disrupt the normal functioning of a system, network, or service by overwhelming it with excessive traffic or requests."
   },
     {
     "domain": "Threats, Vulnerabilities, and Mitigations",
-    "question": "A ' watering hole' attack is a type of attack that targets:",
+    "question": "Which threat vector relies on human interaction and deception to gain unauthorized access or information?",
     "options": {
-      "A": "Senior executives within an organization.",
-      "B": "Individuals based on their social media activity.",
-      "C": "A specific group of users by infecting a website they frequently visit.",
-      "D": "Users of a particular cloud service provider."
+      "A": "Malware",
+      "B": "Network attacks",
+      "C": "Physical intrusion",
+      "D": "Social Engineering"
     },
-    "correct_answer": "C",
-    "explanation": "A watering hole attack is a targeted attack where the attacker compromises a website that a specific group of targets is known to visit. By infecting this website, the attacker can compromise the systems of the targeted users when they visit the site."
+    "correct_answer": "D",
+    "explanation": "Social engineering is a threat vector that manipulates individuals into performing actions or divulging confidential information."
+  },
+  {
+    "domain": "Threats, Vulnerabilities, and Mitigations",
+    "question": "Indicators of Compromise (IoCs) are:",
+    "options": {
+      "A": "Tools used by attackers to exploit vulnerabilities.",
+      "B": "Artifacts observed in a network or operating system that are likely signs of intrusion.",
+      "C": "Security controls implemented to prevent attacks.",
+      "D": "Reports detailing known vulnerabilities."
+    },
+    "correct_answer": "B",
+    "explanation": "Indicators of Compromise (IoCs) are pieces of forensic data, such as malicious file hashes, IP addresses, or domain names, that indicate a system has been breached or compromised."
+  },
+  {
+    "domain": "Threats, Vulnerabilities, and Mitigations",
+    "question": "What is the primary risk associated with a successful SQL injection attack?",
+    "options": {
+      "A": "Interruption of service",
+      "B": "Disclosure or manipulation of sensitive data",
+      "C": "Unauthorized code execution on the client-side",
+      "D": "Increased network latency"
+    },
+    "correct_answer": "B",
+    "explanation": "SQL injection attacks exploit vulnerabilities in web applications to inject malicious SQL code, which can lead to unauthorized access, modification, or deletion of data in a database."
+  },
+  {
+    "domain": "Threats, Vulnerabilities, and Mitigations",
+    "question": "Which of the following is a common mitigation technique for cross-site scripting (XSS) vulnerabilities?",
+    "options": {
+      "A": "Implementing strong passwords",
+      "B": "Input validation and output encoding",
+      "C": "Network segmentation",
+      "D": "Regular data backups"
+    },
+    "correct_answer": "B",
+    "explanation": "Input validation and output encoding are crucial for preventing XSS attacks by sanitizing user input and ensuring that data is displayed correctly in the browser, preventing malicious scripts from executing."
   },
   {
     "domain": "Security Architecture",
-    "question": "Which network device operates at the network layer (Layer 3) of the OSI model and is used to connect different networks?",
+    "question": "Which network security device acts as a barrier between a trusted internal network and an untrusted external network?",
     "options": {
       "A": "Switch",
-      "B": "Hub",
-      "C": "Router",
-      "D": "Repeater"
+      "B": "Router",
+      "C": "Firewall",
+      "D": "Hub"
     },
     "correct_answer": "C",
-    "explanation": "Routers are network devices that forward data packets between different computer networks. They operate at the network layer (Layer 3) of the OSI model and use IP addresses to determine the best path for data transmission."
+    "explanation": "A firewall is a network security device that monitors and controls incoming and outgoing network traffic based on predetermined security rules."
   },
-    {
+  {
     "domain": "Security Architecture",
-    "question": "What is the primary benefit of implementing network segmentation?",
+    "question": "What is the security implication of using a split tunnel VPN?",
     "options": {
-      "A": "Increased network speed and performance.",
-      "B": "Reduced broadcast traffic across the entire network.",
-      "C": "Containment of security breaches and limited lateral movement.",
-      "D": "Simplified network management and troubleshooting."
-    },
-    "correct_answer": "C",
-    "explanation": "Network segmentation involves dividing a network into smaller, isolated segments. This helps to contain the impact of a security breach by preventing attackers from easily moving laterally across the entire network."
-  },
-    {
-    "domain": "Security Architecture",
-    "question": "Which of the following is a security consideration specific to cloud computing?",
-    "options": {
-      "A": "Physical security of the data center.",
-      "B": "Power fluctuations affecting server availability.",
-      "C": "Shared responsibility model for security.",
-      "D": "Proper disposal of magnetic media."
-    },
-    "correct_answer": "C",
-    "explanation": "In cloud computing, security is often a shared responsibility between the cloud service provider and the customer. The specific responsibilities vary depending on the service model (IaaS, PaaS, SaaS)."
-  },
-    {
-    "domain": "Security Architecture",
-    "question": "A demilitarized zone (DMZ) is typically used to:",
-    "options": {
-      "A": "Isolate internal network resources from each other.",
-      "B": "Provide a buffer zone between the internal network and the internet.",
-      "C": "Connect different branches of an organization securely.",
-      "D": "Segment wireless network traffic from the wired network."
+      "A": "All traffic is encrypted and routed through the corporate network.",
+      "B": "Only traffic destined for the corporate network is routed through the VPN.",
+      "C": "It provides the highest level of security for remote users.",
+      "D": "It is less susceptible to malware infections."
     },
     "correct_answer": "B",
-    "explanation": "A DMZ is a perimeter network that is often used to host public-facing services, such as web servers and email servers. It acts as a buffer zone between the untrusted external network (internet) and the trusted internal network, adding an extra layer of security."
+    "explanation": "With a split tunnel VPN, only traffic intended for the corporate network goes through the VPN tunnel, while other traffic (e.g., internet Browse) goes directly from the user's local network. This can expose the user to threats from the public internet that bypass corporate security controls."
   },
-    {
+  {
     "domain": "Security Architecture",
-    "question": "Which cryptographic concept ensures that data remains confidential and cannot be understood by unauthorized individuals?",
+    "question": "In a cloud computing environment, who is typically responsible for the security of the operating system and applications in an Infrastructure as a Service (IaaS) model?",
     "options": {
-      "A": "Integrity",
-      "B": "Availability",
-      "C": "Confidentiality",
-      "D": "Non-repudiation"
+      "A": "The cloud provider",
+      "B": "The customer",
+      "C": "A third-party security vendor",
+      "D": "Both the provider and the customer equally"
+    },
+    "correct_answer": "B",
+    "explanation": "In the IaaS model, the cloud provider is responsible for the security of the underlying infrastructure (hardware, storage, networking), while the customer is responsible for securing the operating system, applications, and data."
+  },
+  {
+    "domain": "Security Architecture",
+    "question": "A security architecture where all traffic is authenticated, authorized, and encrypted regardless of its location relative to the network is known as:",
+    "options": {
+      "A": "Perimeter Security",
+      "B": "Zero Trust Architecture",
+      "C": "Castle and Moat Model",
+      "D": "Flat Network Architecture"
+    },
+    "correct_answer": "B",
+    "explanation": "Zero Trust is a security framework that requires strict identity verification for every person and device trying to access resources on a private network, regardless of whether they are inside or outside the network perimeter."
+  },
+  {
+    "domain": "Security Architecture",
+    "question": "What is the purpose of a jump server (or bastion host)?",
+    "options": {
+      "A": "To host public-facing websites.",
+      "B": "To provide a secure, controlled access point to a protected network segment.",
+      "C": "To balance network traffic across multiple servers.",
+      "D": "To store encrypted backups of critical data."
+    },
+    "correct_answer": "B",
+    "explanation": "A jump server is a hardened and monitored server that acts as an intermediary to access more sensitive systems within a network, providing a single point of control and monitoring."
+  },
+  {
+    "domain": "Security Architecture",
+    "question": "Which of the following best describes the use of containers in a secure application architecture?",
+    "options": {
+      "A": "They provide physical isolation between applications.",
+      "B": "They package application code and dependencies for consistent deployment.",
+      "C": "They offer a higher level of security than virtual machines.",
+      "D": "They eliminate the need for operating system security patches."
+    },
+    "correct_answer": "B",
+    "explanation": "Containers provide a lightweight, portable, and consistent environment for deploying applications by packaging the application code and its dependencies together. While they offer some isolation, it's typically at the process level rather than the hardware-level isolation of virtual machines."
+  },
+  {
+    "domain": "Security Architecture",
+    "question": "Implementing TLS/SSL certificates on a web server primarily provides which security benefit?",
+    "options": {
+      "A": "Data integrity and confidentiality during transit.",
+      "B": "Protection against malware infections.",
+      "C": "Prevention of denial-of-service attacks.",
+      "D": "User authentication."
+    },
+    "correct_answer": "A",
+    "explanation": "TLS/SSL certificates enable encrypted communication between a web server and a client (browser), ensuring the confidentiality and integrity of data exchanged over the internet."
+  },
+  {
+    "domain": "Security Architecture",
+    "question": "Which protocol is commonly used for securely transferring files over a network?",
+    "options": {
+      "A": "FTP",
+      "B": "HTTP",
+      "C": "SSH",
+      "D": "Telnet"
     },
     "correct_answer": "C",
-    "explanation": "Confidentiality, in the context of cryptography, is achieved through encryption, which transforms data into an unreadable format (ciphertext) that can only be deciphered by someone with the correct key."
+    "explanation": "SSH (Secure Shell) provides a secure encrypted connection for remote login and file transfer, making it a secure alternative to protocols like Telnet and FTP."
+  },
+  {
+    "domain": "Security Architecture",
+    "question": "Data loss prevention (DLP) solutions are primarily designed to protect which aspect of data security?",
+    "options": {
+      "A": "Availability",
+      "B": "Processing",
+      "C": "Exfiltration",
+      "D": "Storage"
+    },
+    "correct_answer": "C",
+    "explanation": "Data Loss Prevention (DLP) systems are designed to prevent sensitive data from leaving the organization's network or systems, thus protecting against data exfiltration."
   },
   {
     "domain": "Security Operations",
-    "question": "What is the primary goal of incident response?",
+    "question": "What is the first phase of the incident response process?",
     "options": {
-      "A": "To prevent all security incidents from occurring.",
-      "B": "To minimize the impact of a security incident and restore normal operations.",
-      "C": "To identify and prosecute the perpetrators of a security incident.",
-      "D": "To implement security controls to prevent future incidents."
-    },
-    "correct_answer": "B",
-    "explanation": "The primary goal of incident response is to handle and manage the aftermath of a security breach or cyberattack in a way that limits damage and reduces recovery time and costs. This includes preparation, detection and analysis, containment, eradication, recovery, and lessons learned."
-  },
-    {
-    "domain": "Security Operations",
-    "question": "Which of the following is a key aspect of security monitoring?",
-    "options": {
-      "A": "Implementing firewalls and intrusion prevention systems.",
-      "B": "Developing and enforcing security policies.",
-      "C": "Analyzing logs and security alerts for suspicious activity.",
-      "D": "Performing regular vulnerability assessments."
+      "A": "Containment",
+      "B": "Eradication",
+      "C": "Preparation",
+      "D": "Detection and Analysis"
     },
     "correct_answer": "C",
-    "explanation": "Security monitoring involves the continuous process of collecting, analyzing, and reviewing security-related data, such as logs and alerts from various security devices and systems, to detect and respond to potential security threats."
-  },
-    {
-    "domain": "Security Operations",
-    "question": "What is the purpose of a Security Information and Event Management (SIEM) system?",
-    "options": {
-      "A": "To perform automated vulnerability scans.",
-      "B": "To manage user identities and access permissions.",
-      "C": "To centralize security logs and alerts for analysis and correlation.",
-      "D": "To provide a secure gateway for remote access."
-    },
-    "correct_answer": "C",
-    "explanation": "A SIEM system is designed to collect, aggregate, and analyze security logs and event data from various sources across an organization's IT infrastructure. This helps security teams to detect, analyze, and respond to security incidents more effectively."
-  },
-    {
-    "domain": "Security Operations",
-    "question": "The process of gathering and preserving digital evidence in a forensically sound manner is known as:",
-    "options": {
-      "A": "Incident handling",
-      "B": "Vulnerability analysis",
-      "C": "Digital forensics",
-      "D": "Threat hunting"
-    },
-    "correct_answer": "C",
-    "explanation": "Digital forensics is the process of acquiring, preserving, analyzing, and reporting on digital evidence. This is crucial for understanding how a security incident occurred and for potential legal proceedings."
-  },
-    {
-    "domain": "Security Operations",
-    "question": "Which of the following is a common technique used during the containment phase of incident response?",
-    "options": {
-      "A": "Notifying affected parties.",
-      "B": "Implementing temporary workarounds.",
-      "C": "Isolating affected systems.",
-      "D": "Performing a root cause analysis."
-    },
-    "correct_answer": "C",
-    "explanation": "The containment phase of incident response focuses on limiting the scope and impact of the security incident. Isolating affected systems (e.g., disconnecting them from the network) is a common technique to prevent the incident from spreading."
+    "explanation": "The incident response process typically begins with the preparation phase, which involves establishing policies, procedures, and teams to handle potential incidents."
   },
   {
-    "domain": "Security Program Management and Oversight",
-    "question": "Which document outlines the organization's overall approach to security and establishes the security roles and responsibilities?",
+    "domain": "Security Operations",
+    "question": "Analyzing system logs, intrusion detection system alerts, and security event information is part of which incident response phase?",
     "options": {
-      "A": "Standard Operating Procedure (SOP)",
-      "B": "Acceptable Use Policy (AUP)",
-      "C": "Security Policy",
-      "D": "Disaster Recovery Plan (DRP)"
+      "A": "Containment",
+      "B": "Recovery",
+      "C": "Detection and Analysis",
+      "D": "Lessons Learned"
     },
     "correct_answer": "C",
-    "explanation": "The security policy is a high-level document that defines the organization's stance on security, its objectives, and the framework for achieving those objectives. It sets the foundation for other security documents like SOPs and AUPs."
+    "explanation": "The Detection and Analysis phase involves monitoring for signs of security incidents and analyzing collected data to understand the nature and scope of the incident."
   },
-    {
-    "domain": "Security Program Management and Oversight",
-    "question": "What is the primary purpose of a Business Impact Analysis (BIA)?",
+  {
+    "domain": "Security Operations",
+    "question": "Which of the following is a critical step in the containment phase of incident response?",
     "options": {
-      "A": "To identify potential threats to the organization.",
-      "B": "To determine the financial and operational impact of disruptive events.",
-      "C": "To assess the effectiveness of existing security controls.",
-      "D": "To develop incident response procedures."
+      "A": "Notifying law enforcement.",
+      "B": "Isolating affected systems to prevent further spread.",
+      "C": "Restoring systems from backups.",
+      "D": "Identifying the root cause of the incident."
     },
     "correct_answer": "B",
-    "explanation": "A Business Impact Analysis (BIA) is a critical part of business continuity and disaster recovery planning. It helps an organization identify its most critical business functions and determine the potential financial and operational losses that could result from disruptions to those functions."
+    "explanation": "Containment focuses on limiting the damage of the incident and preventing it from spreading. Isolating affected systems is a key action during this phase."
   },
-    {
-    "domain": "Security Program Management and Oversight",
-    "question": "Which of the following is a key element of third-party risk management?",
+  {
+    "domain": "Security Operations",
+    "question": "The process of removing the cause of a security incident, such as malware or a vulnerable service, is known as:",
     "options": {
-      "A": "Ensuring that all third-party vendors have their own incident response team.",
-      "B": "Conducting security assessments and due diligence on vendors.",
-      "C": "Dictating the security policies that third-party vendors must follow.",
-      "D": "Assuming all responsibility for security when using third-party services."
+      "A": "Recovery",
+      "B": "Eradication",
+      "C": "Containment",
+      "D": "Preparation"
     },
     "correct_answer": "B",
-    "explanation": "Third-party risk management involves assessing and mitigating the risks associated with engaging with external vendors and service providers. This includes conducting security assessments, reviewing their security practices, and ensuring they meet the organization's security requirements."
+    "explanation": "Eradication involves eliminating the components of the incident, such as deleting malware, patching vulnerabilities, or disabling compromised accounts."
   },
-    {
-    "domain": "Security Program Management and Oversight",
-    "question": "Regular security awareness training for employees is crucial for mitigating which type of security threat?",
+  {
+    "domain": "Security Operations",
+    "question": "Restoring affected systems and services to normal operation after a security incident occurs in which phase?",
     "options": {
-      "A": "Hardware failures",
-      "B": "Environmental disasters",
-      "C": "Social engineering attacks",
-      "D": "Software vulnerabilities"
+      "A": "Containment",
+      "B": "Eradication",
+      "C": "Recovery",
+      "D": "Lessons Learned"
     },
     "correct_answer": "C",
-    "explanation": "Security awareness training helps educate employees about potential security threats and best practices, making them less susceptible to social engineering attacks such as phishing, pretexting, and baiting, which exploit human psychology."
+    "explanation": "The Recovery phase focuses on bringing affected systems and services back online and ensuring they are secure and functioning correctly."
   },
-    {
-    "domain": "Security Program Management and Oversight",
-    "question": "What is the purpose of a Service Level Agreement (SLA) in the context of security?",
+  {
+    "domain": "Security Operations",
+    "question": "What is the primary benefit of conducting incident response tabletop exercises?",
     "options": {
-      "A": "To define the technical specifications of security software.",
-      "B": "To outline the responsibilities of the security team during an incident.",
-      "C": "To specify the level of security service and performance expected from a provider.",
-      "D": "To document the procedures for conducting security audits."
+      "A": "To test the technical capabilities of security tools.",
+      "B": "To evaluate the effectiveness of physical security controls.",
+      "C": "To practice and refine incident response procedures and communication.",
+      "D": "To identify zero-day vulnerabilities in the network."
     },
     "correct_answer": "C",
-    "explanation": "A Service Level Agreement (SLA) is a contract that defines the level of service expected from a vendor or provider. In a security context, an SLA can specify security requirements, performance metrics (e.g., uptime, response time to incidents), and responsibilities related to security."
-  }
-  //  More questions would follow, distributed according to domain weightings.
-  //  A full set of 1000 questions would be generated to meet the request's requirement.
-]
+    "explanation": "Tabletop exercises are discussion-based sessions where participants talk through simulated scenarios to test and improve incident response plans, roles, and communication channels."
+  },
+  {
+    "domain": "Security Operations",
+    "question": "A Security Information and Event Management (SIEM) system is primarily used for:",
+    "options": {
+      "A": "Implementing intrusion prevention rules.",
+      "B": "Managing user access controls.",
+      "C": "Aggregating and analyzing security logs from various sources.",
+      "D": "Performing automated vulnerability assessments."
+    },
+    "correct_answer": "C",
+    "explanation": "SIEM systems centralize and analyze security logs and events from different devices and applications to provide a holistic view of the security posture and aid in incident detection and response."
+  },
+  {
+    "domain": "Security Operations",
+    "question": "The process of actively searching for threats within a network that have not been detected by existing security controls is known as:",
+    "options": {
+      "A": "Vulnerability scanning",
+      "B": "Penetration testing",
+      "C": "Threat hunting",
+      "D": "Security auditing"
+    },
+    "correct_answer": "C",
+    "explanation": "Threat hunting is a proactive security activity where security professionals actively search for malicious activity that may be present in the network but has not triggered any alerts from automated security tools."
+  },
+  {
+    "domain": "Security Operations",
+    "question": "Which of the following is a key consideration for secure data disposal?",
+    "options": {
