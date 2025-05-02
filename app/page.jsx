@@ -5,7 +5,7 @@ export default function Page() {
   const [questions, setQuestions] = useState([])
 
   useEffect(() => {
-    fetch('/question.json')
+    fetch('/questions.json')
       .then(res => res.json())
       .then(data => setQuestions(data))
   }, [])
