@@ -50,3 +50,5 @@ export default function Home() {
     </main>
   );
               }
+
+fix: remove pages/index.js to use app router
