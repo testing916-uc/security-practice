@@ -12,12 +12,12 @@ export default function Home() {
         setLoading(false);
       })
       .catch(err => {
-        console.error('Failed to load questions:', err);
+        console.error('Error loading questions:', err);
         setLoading(false);
       });
   }, []);
 
-  if (loading) return <p>Loading questions...</p>;
+  if (loading) return <p>Loading...</p>;
 
   return (
     <div style={{ padding: '1rem' }}>
