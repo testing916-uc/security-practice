@@ -1,37 +1,28 @@
-// pages/index.js
 import { useEffect, useState } from 'react';
 
 export default function HomePage() {
   const [questions, setQuestions] = useState([]);
-  const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Fetch the questions from the API route
-    fetch('/api/questions')
+    fetch('/questions.json')
       .then((res) => res.json())
-      .then((data) => {
-        setQuestions(data);
-        setLoading(false);
-      })
-      .catch((error) => {
-        console.error('Error fetching questions:', error);
-        setLoading(false);
-      });
+      .then((data) => setQuestions(data))
+      .catch((err) => console.error('Error loading questions:', err));
   }, []);
 
-  if (loading) return <p>Loading questions...</p>;
-
   return (
-    <div className="p-4">
-      <h1 className="text-xl font-bold">Security+ Practice Questions</h1>
+    <div>
+      <h1>Security+ Practice Questions</h1>
+      {questions.length === 0 && <p>Loading...</p>}
       {questions.map((q, index) => (
-        <div key={index} className="my-4 border p-3 rounded">
-          <p>{q.question}</p>
-          <ul className="list-disc ml-5">
+        <div key={index} style={{ marginBottom: '1rem' }}>
+          <p><strong>Q{index + 1}:</strong> {q.question}</p>
+          <ul>
             {q.choices.map((choice, i) => (
               <li key={i}>{choice}</li>
             ))}
           </ul>
+          <p><em>Answer: {q.answer}</em></p>
         </div>
       ))}
     </div>
